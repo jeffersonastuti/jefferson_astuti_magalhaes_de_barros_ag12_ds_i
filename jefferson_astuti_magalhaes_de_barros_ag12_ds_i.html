@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o conjunto de caracteres usado na página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar corretamente a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador, conforme solicitado na atividade -->
+    <title>Meus sites favoritos</title>
+
+    <!-- Estilos CSS usados para deixar a página mais organizada e agradável -->
+    <style>
+        /* Configuração geral da página */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #ffffff);
+            color: #1f2937;
+        }
+
+        /* Cabeçalho principal */
+        header {
+            text-align: center;
+            padding: 40px 20px 25px 20px;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        /* Título principal do corpo da página */
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Pequena descrição abaixo do título */
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        /* Área principal onde ficam os cards dos sites */
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        /* Grade responsiva para organizar os sites favoritos */
+        .grade-sites {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        /* Card individual de cada site */
+        .card-site {
+            background-color: white;
+            border-radius: 18px;
+            padding: 22px;
+            text-align: center;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito visual ao passar o mouse por cima do card */
+        .card-site:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+        }
+
+        /* Nome de cada site, colocado acima da imagem */
+        .card-site h2 {
+            margin-top: 0;
+            color: #0f172a;
+            font-size: 24px;
+        }
+
+        /* Imagem de cada site */
+        .card-site img {
+            width: 100%;
+            max-width: 210px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 16px;
+        }
+
+        /* Texto explicativo de cada card */
+        .card-site p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #475569;
+            min-height: 68px;
+        }
+
+        /* Link de acesso ao site */
+        .card-site a.link-site {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Efeito visual no link ao passar o mouse */
+        .card-site a.link-site:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Rodapé da página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f172a;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com o título do corpo da página -->
+    <header>
+        <h1>Meus sites favoritos: Jefferson Astuti Magalhães de Barros</h1>
+        <p>Uma página simples em HTML e CSS para organizar sites úteis para estudo, trabalho e lazer.</p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção com os cinco sites favoritos -->
+        <section class="grade-sites">
+
+            <!-- Primeiro site favorito -->
+            <article class="card-site">
+                <h2>Google</h2>
+                <a href="https://www.google.com" target="_blank">
+                    <img src="assets/google.png" alt="Imagem ilustrativa do site Google">
+                </a>
+                <p>Ferramenta de pesquisa muito utilizada para encontrar informações, notícias, imagens e materiais de estudo.</p>
+                <a class="link-site" href="https://www.google.com" target="_blank">Acessar Google</a>
+            </article>
+
+            <!-- Segundo site favorito -->
+            <article class="card-site">
+                <h2>YouTube</h2>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="assets/youtube.png" alt="Imagem ilustrativa do site YouTube">
+                </a>
+                <p>Plataforma de vídeos usada para entretenimento, aulas, tutoriais e conteúdos educativos sobre tecnologia.</p>
+                <a class="link-site" href="https://www.youtube.com" target="_blank">Acessar YouTube</a>
+            </article>
+
+            <!-- Terceiro site favorito -->
+            <article class="card-site">
+                <h2>GitHub</h2>
+                <a href="https://github.com" target="_blank">
+                    <img src="assets/github.png" alt="Imagem ilustrativa do site GitHub">
+                </a>
+                <p>Ambiente usado por programadores para armazenar projetos, versionar códigos e compartilhar repositórios.</p>
+                <a class="link-site" href="https://github.com" target="_blank">Acessar GitHub</a>
+            </article>
+
+            <!-- Quarto site favorito -->
+            <article class="card-site">
+                <h2>Python</h2>
+                <a href="https://www.python.org" target="_blank">
+                    <img src="assets/python.png" alt="Imagem ilustrativa do site Python">
+                </a>
+                <p>Site oficial da linguagem Python, com documentação, downloads, novidades e materiais para aprendizagem.</p>
+                <a class="link-site" href="https://www.python.org" target="_blank">Acessar Python</a>
+            </article>
+
+            <!-- Quinto site favorito -->
+            <article class="card-site">
+                <h2>W3Schools</h2>
+                <a href="https://www.w3schools.com" target="_blank">
+                    <img src="assets/w3schools.png" alt="Imagem ilustrativa do site W3Schools">
+                </a>
+                <p>Site com tutoriais de HTML, CSS, JavaScript e outras tecnologias importantes para desenvolvimento web.</p>
+                <a class="link-site" href="https://www.w3schools.com" target="_blank">Acessar W3Schools</a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Rodapé com identificação da atividade -->
+    <footer>
+        Atividade Agenda 12 - Desenvolvimento de Sistemas I
+    </footer>
+</body>
+</html>
